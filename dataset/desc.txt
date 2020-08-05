@@ -1,0 +1,1 @@
+This dataset is cleaned from IDS-2018 CSV files which contain DoS/DDoS attack.
