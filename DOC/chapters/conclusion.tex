@@ -1,0 +1,52 @@
+Qua 6 chương trước đó tôi đã lần lượt trình bày quá trình tìm hiểu và cài đặt công cụ phát hiện và phòng thủ trước tấn công DoS/DDoS trong mạng SDN của mình. Chương này tổng kết lại những điểm được và chưa được của khóa luận này và đưa ra những hướng phát triển nếu có thể trong tương lai.
+
+\section{Các kết luận từ đề tài}
+
+Từ kết luận ở mục \ref{compare-multi-models} và mục \ref{test-conclusion},  tôi rút ra  được các ý sau.
+
+\begin{itemize}
+	\item [--] Đối với dataset CICIDS2018, mô hình có cách tiếp cận đơn giản nhưng  mang lại kết quả tốt nhất là Decision Tree.
+	\item [--] Khi áp dụng vào thực nghiệm, độ chính xác của mô hình khi huấn luyện lại khác xa so với thực tế. Ở đây, mô hình Decision Tree lại thể hiện khả năng nhận diện kém hơn LinearSVM.
+	\item [--] Các mô hình hiện tại sẽ bị vô hiệu trước một mẫu tấn công mới, hoàn toàn xa lạ. Điều này có thể  rút ra từ phần kiểm thử với công cụ Hulk, khi mà công cụ tôi sử dụng hoạt động khác so với công cụ mà tác giả của dataset CICIDS2018 sử dụng.
+	\item [--] Công cụ tôi phát triển không nên sử dụng độc lập mà cần kết hợp với nhiều công cụ sử dụng các kỹ thuật khác để tăng độ chính xác và độ tin cậy.
+\end{itemize}
+
+\section{Kết quả đạt được}
+
+\textbf{Những điều làm được}:
+
+\begin{itemize}
+	\item [--] Hiểu được các cách thức và nguy cơ của tấn công DoS/DDoS hiện nay.
+	\item [--] Hiểu và ứng dụng các mô hình học máy Linear SVM, Naïve Bayes, Decision Tree, Random Forest và mô hình học sâu để giải quyết vấn đề phân loại luồng gói tin.
+	\item [--] Huấn luyện được  nhiều  mô hình học máy và tìm được mô hình đơn giản mà hiệu quả là Decision Tree.
+	\item [--] Hoàn thành proof-of-concept công cụ phát hiện tấn công DoS/DDoS  theo thời gian thực (IDS-DDoS).
+	\item [--] Hoàn thành proof-of-concept hệ thống mạng SDN mô phỏng quá trình tấn công và phòng thủ với hai kịch bản thường gặp.
+\end{itemize}
+
+\textbf{Những điều chưa làm được}:
+
+\begin{itemize}
+	\item [--] Chưa huấn luyện được một số mô hình học sâu do hạn chế về khả năng xử lý dữ liệu, do kích thước dữ liệu quá lớn.
+	\item [--] Chưa kiểm tra chéo mô hình trên các tập dữ liệu khác nhau do nhiều nguyên nhân như bất đồng về định dạng của các tập dữ liệu, kích thước tập dữ liệu quá lớn, vv.
+\end{itemize}
+
+\section{Hướng phát triển}
+
+\begin{itemize}
+	\item [--] Huấn luyện thêm một số mô hình học sâu.
+	\item [--] Kiểm tra chéo kết quả các mô hình trên các tập dữ liệu khác nhau.
+	\item [--] Áp dụng và đánh giá công cụ IDS-DDoS vào một số nền tảng mạng khác so với SDN.
+	\item [--] Tìm ra nguyên nhân vì sao độ chính xác khi huấn luyện lại khác so với thực nghiệm.
+	\item [--] Tìm một mô hình học máy hay học sâu tốt hơn để có thể nhận diện được công cụ tấn công không nằm trong  dataset.
+	\item [--]  Kết hợp công cụ IDS-DDoS với các công cụ khác để tăng độ tin cậy và độ chính xác.
+\end{itemize}
+
+\section{Lời kết}
+
+Trong thời gian có hạn, tôi chỉ mới nghiên cứu được một phần trong lĩnh vực phòng chống tấn công DoS/DDoS cũng như công nghệ SDN.
+
+Có thể những kiến thức tôi thu nhận được trong thời gian qua chưa đủ nhiều. Tuy nhiên tôi nhận thấy mình đã phát triển được những kỹ năng như: kỹ năng tìm kiếm thông tin, kỹ năng phân tích và giải quyết vấn đề, khả năng thích nghi với môi trường và công nghệ mới, vv. Với những kỹ năng thu được, tôi hi vọng sẽ giúp tôi phát triển hơn trong tương lai.
+
+Mặc dù đã cố gắng trong quá trình thực hiện, chắc chắn khóa luận không tránh
+khỏi những thiếu sót. Rất mong nhận được sự góp ý và chỉ bảo tận tình của quý thầy
+cô và các bạn.

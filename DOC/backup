@@ -1,0 +1,14 @@
+ \subsubsection{You Only Look Once - YOLO}
+Phương pháp nhận diện thời gian thực YOLO \cite{yolo} được nhóm nghiên cứu của Joseph Redmon lần đầu công bố vào tháng 06 năm 2015, đã đưa ra một cách tiếp cận hoàn toàn mới cho bài toán phát hiện vật thể trong thời gian thực. Trong phương pháp này, việc xác định tọa độ và lớp của vật thể được xem như một bài toán hồi quy và được giải quyết bằng một mô hình mạng nơ-ron duy nhất để xác định khối bao (bounding boxes) và xác xuất phân lớp của vật thể. Bởi vì chỉ sử dụng một mạng nơ-rơn mà chạy một lần duy nhất, YOLO hoàn toàn vượt trội so với các phương pháp lúc bấy giờ.
+
+Mặc dù được thiết kế để giải bài toán nhận diện và phân lớp vật thể, YOLO hoàn toàn có thể được huấn luyện với bộ dữ liệu phù hợp để giải quyết bài toán phát hiện và định vị khuôn mặt; khi đó YOLO chỉ sẽ nhận diện một lớp vật thể duy nhất - khuôn mặt con người.
+
+\subsubsection{Single-stage Dense Face Localisation - RetinaFace}
+RetinaFace \cite{retinaface} là một phương pháp định vị khuôn mặt trong môi trường tự nhiên vừa được giới thiệu năm 2019 bởi Jiankang Deng và các cộng sự tại nhóm Nghiên cứu hành vi thông minh Đại học Hoàng Gia London. RetinaFace là một phương pháp định vị khuôn mặt thông qua từng pixel thông qua chỉ một giai đoạn. Bằng cách sử dụng một mô hình học sâu nhỏ gọn ở phía dưới, RetinaFace có thể chạy được trong thời gian thực đối với video có độ phân giải cao kể cả khi chạy trên một vi xử lý đơn luồng.
+
+\subsubsection{Light and Fast Face Detector - LFFD}
+Tháng 04 năm 2019, nhóm tác giả bao gồm Yonghao He, Dezhong Xu đã đề xuất một phương pháp phát hiện khuôn mặt có thể chạy được trên các thiết bị tính toán đầu cuối \cite{lffd}. Bằng cách ứng dụng mối quan hệ giữa vùng tiếp nhận (receptive field) và độ dãn khuôn mặt và mô hình mạng học sâu chỉ có một giai đoạn tính toán, phương pháp LFFD có thể xác định khuôn mặt kể cả với các thiết bị đầu cuối có khả năng tính toán cực hạn chế.
+
+
+\subsubsection{DeepFace}
+Năm 2014, nhóm các nhà nghiên cứu ở Facebook đã xuất bản một công trình mang tên DeepFace \cite{fbdeepface}, trình bày một phương pháp biểu diễn đặc trưng khuôn mặt được kì vọng là sẽ tiến gần đến khả năng của con người\footnote{Closing the Gap to Human-Level Performance in Face Verification}. Phương pháp này tác động đến các bước định vị và biểu diễn đặc trưng trong quy trình 4 bước của việc giải một bài toán nhận dạng: phát hiện, định vị, biểu diễn đặc trưng và phân lớp. Với một mô hình mạng nơ-ron gồm 9 lớp xử lý trên biểu diễn 3D của khuôn mặt, phương pháp cho thấy độ chính xác rất cao trong các thao tác nhận dạng mặt người.
