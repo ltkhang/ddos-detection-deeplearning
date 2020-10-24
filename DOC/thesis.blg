@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7350 64-bit)
+Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
+The top-level auxiliary file: thesis.aux
+The style file: ieeetr.bst
+Database file #1: thesis.bib
+Warning--empty title in 19-Welling
+Name 1 in "Ram B. Basnet, Riad Shash, Clayton Johnson, Lucas Walgren, and Tenzin Doleck" has a comma at the end for entry 61-Basnet
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "Ram B. Basnet, Riad Shash, Clayton Johnson, Lucas Walgren, and Tenzin Doleck" for entry 61-Basnet
+while executing---line 969 of file ieeetr.bst
+Too many commas in name 1 of "Manso, Pedro; Moura, José; Serrão, Carlos" for entry 56-manso
+while executing---line 969 of file ieeetr.bst
+Warning--can't use both volume and number fields in 71-Rish
+You've used 55 entries,
+            1876 wiz_defined-function locations,
+            820 strings with 14067 characters,
+and the built_in function-call counts, 16461 in all, are:
+= -- 1638
+> -- 576
+< -- 0
++ -- 215
+- -- 160
+* -- 1012
+:= -- 2077
+add.period$ -- 58
+call.type$ -- 55
+change.case$ -- 52
+chr.to.int$ -- 0
+cite$ -- 57
+duplicate$ -- 957
+empty$ -- 1570
+format.name$ -- 160
+if$ -- 4232
+int.to.chr$ -- 0
+int.to.str$ -- 55
+missing$ -- 46
+newline$ -- 171
+num.names$ -- 49
+pop$ -- 257
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 839
+stack$ -- 0
+substring$ -- 1031
+swap$ -- 497
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 2
+while$ -- 123
+width$ -- 57
+write$ -- 514
+(There were 3 error messages)

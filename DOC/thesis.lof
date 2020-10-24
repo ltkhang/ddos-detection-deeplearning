@@ -1,0 +1,43 @@
+\babel@toc {vietnamese}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Mô hình tấn công DDoS}}{11}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Kiến trúc của SDN \cite {11-Kreutz}}}{14}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Kiến trúc tổng quan và chức năng của OVS \cite {16-openvswitch}}}{16}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Một số giải thuật học máy \cite {18-Dey}}}{18}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Giải thuật học máy có giám sát \cite {18-Dey}}}{19}{figure.2.5}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mô tả mô hình SVM \cite {18-Dey}}}{19}{figure.2.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Một ví dụ về Bayesian Network \cite {18-Dey}}}{20}{figure.2.7}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Một ví dụ cho Decision Tree}}{21}{figure.2.8}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Quá trình máy phân lớp Random forest}}{21}{figure.2.9}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Mạng nơ-ron sinh học}}{23}{figure.2.10}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Mạng nơ-ron nhân tạo}}{24}{figure.2.11}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Mạng nơ-ron suy luận tiến \cite {62-Shrestha}}}{25}{figure.2.12}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Mạng nơ-ron hồi quy \cite {62-Shrestha}}}{26}{figure.2.13}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Mô hình mạng trong CSE-CIC-IDS2018}}{36}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Lưu đồ giải thuật tiền xử lý dataset}}{38}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Lưu đồ tối ưu hóa dataset}}{42}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Ví dụ siêu phẳng phân chia}}{45}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Ví dụ biên mềm}}{46}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Cách hàm cốt lõi ánh xạ dữ liệu}}{47}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Kiến trúc các mô hình của DeepDefense \cite {28-Yuan}}}{50}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Kiến trúc mô hình của LUCID \cite {27-Corin}}}{51}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mô hình học sâu DNN}}{51}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Độ chính xác mô hình DNN trong quá trình huấn luyện}}{52}{figure.4.10}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Độ mất mát mô hình DNN trong quá trình huấn luyện}}{52}{figure.4.11}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces So sánh độ chính xác các mô hình trên tập IDS-test}}{54}{figure.4.12}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Lưu đồ phần mềm IDS-DDoS}}{56}{figure.4.13}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Lưu đồ lớp FlowGenerator}}{58}{figure.4.14}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Lưu đồ của SDN controller}}{60}{figure.4.15}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Giao diện web client thống kê lưu lượng}}{61}{figure.4.16}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mạng mô phỏng}}{64}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Mô hình NAT port}}{65}{figure.5.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Giao diện công cụ HOIC}}{67}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Kịch bản 1: Trạng thái mạng trước và trong khi tấn công}}{68}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Kịch bản 1: Trạng thái mạng sau khi tấn công}}{69}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Kịch bản 2: Trạng thái mạng trong quá trình H1 tấn công}}{70}{figure.6.4}%
+\addvspace {10\p@ }

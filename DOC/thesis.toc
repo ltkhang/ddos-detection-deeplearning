@@ -1,0 +1,85 @@
+\babel@toc {vietnamese}{}
+\contentsline {chapter}{Lời mở đầu}{1}{chapter*.6}%
+\contentsline {chapter}{\numberline {1}Giới thiệu}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Tổng quan về đề tài}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Bài toán nghiên cứu của đề tài}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Mục tiêu đặt ra và hướng tiếp cận vấn đề}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Đối tượng nghiên cứu}{5}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Cơ sở lý thuyết}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Tấn công từ chối dịch vụ (DoS) và tấn công từ chối dịch vụ phân tán (DDoS)}{7}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Tấn công từ chối dịch vụ}{7}{subsection.2.1.1}%
+\contentsline {subsubsection}{Tấn công từ chối dịch vụ là gì?}{7}{section*.7}%
+\contentsline {subsubsection}{Những loại tấn công DoS thường gặp}{8}{section*.8}%
+\contentsline {subsection}{\numberline {2.1.2}Tấn công từ chối dịch vụ phân tán}{9}{subsection.2.1.2}%
+\contentsline {subsubsection}{Tấn công từ chối dịch vụ phân tán là gì?}{9}{section*.9}%
+\contentsline {subsubsection}{Các loại tấn công từ chối địch vụ phân tán thường gặp}{10}{section*.10}%
+\contentsline {subsubsection}{Các đợt tấn công DoS/DDoS điển hình}{12}{section*.11}%
+\contentsline {section}{\numberline {2.2}Mạng định nghĩa bằng phần mềm (Software Defined Network)}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Software defined network là gì}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Open vSwitch}{15}{subsection.2.2.2}%
+\contentsline {subsubsection}{Open vSwitch (OVS) là gì?}{15}{section*.12}%
+\contentsline {subsection}{\numberline {2.2.3}Vai trò của SDN controller}{16}{subsection.2.2.3}%
+\contentsline {subsubsection}{Tổng quan}{16}{section*.13}%
+\contentsline {subsubsection}{Framework RYU}{17}{section*.14}%
+\contentsline {section}{\numberline {2.3}Học máy (Machine Learning)}{17}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Học máy là gì?}{17}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Mô hình học máy}{18}{subsection.2.3.2}%
+\contentsline {subsubsection}{Học có giám sát}{18}{section*.15}%
+\contentsline {subsubsection}{Support Vector Machine}{19}{section*.16}%
+\contentsline {subsubsection}{Naïve Bayes}{20}{section*.17}%
+\contentsline {subsubsection}{Decision Tree}{20}{section*.18}%
+\contentsline {subsubsection}{Random Forest}{20}{section*.19}%
+\contentsline {subsection}{\numberline {2.3.3}Thư viện scikit-learn}{22}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Học sâu (Deep learning)}{22}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Học sâu là gì}{22}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Mô hình học sâu}{23}{subsection.2.4.2}%
+\contentsline {subsubsection}{Khái niệm và phân loại}{23}{section*.20}%
+\contentsline {subsubsection}{Một số khái niệm về các hàm huấn luyện}{26}{section*.21}%
+\contentsline {subsection}{\numberline {2.4.3}Thư viện Tensorflow và Keras}{27}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {3}Các công trình liên quan}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Phát hiện tấn công DDoS với phương pháp thống kê}{28}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Phát hiện DDoS với phương pháp học máy và học sâu}{29}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Một số dataset được sử dụng hiện nay}{29}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Một số công trình sử dụng phương pháp học máy}{31}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Một số công trình sử dụng phương pháp học sâu}{31}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Phát hiện và phòng thủ DDoS trong SDN}{33}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Mô hình giải pháp của đề tài}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tập dữ liệu dùng để huấn luyện: CICIDS2018}{35}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Tiền xử lý và thống kê dữ liệu}{36}{subsection.4.1.1}%
+\contentsline {subsubsection}{Tiền xử lý}{36}{section*.22}%
+\contentsline {subsubsection}{Thống kê}{37}{section*.23}%
+\contentsline {subsection}{\numberline {4.1.2}Xử lý dữ liệu}{37}{subsection.4.1.2}%
+\contentsline {subsubsection}{Phân chia dữ liệu thành các tập con}{37}{section*.24}%
+\contentsline {subsubsection}{Phân tích, tối ưu hóa dữ liệu}{39}{section*.25}%
+\contentsline {section}{\numberline {4.2}Các mô hình huấn luyện}{43}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Các chỉ số đánh giá mô hình}{43}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Mô hình học máy}{44}{subsection.4.2.2}%
+\contentsline {subsubsection}{Support Vector Machine}{44}{section*.26}%
+\contentsline {subsubsection}{Naïve Bayes}{47}{section*.27}%
+\contentsline {subsubsection}{Decision Tree}{48}{section*.28}%
+\contentsline {subsubsection}{Huấn luyện mô hình trên tập IDS-train}{49}{section*.29}%
+\contentsline {subsubsection}{Kiểm thử mô hình trên tập IDS-test}{49}{section*.30}%
+\contentsline {subsection}{\numberline {4.2.3}Mô hình học sâu}{49}{subsection.4.2.3}%
+\contentsline {subsubsection}{Chi tiết mô hình DeepDefense và LUCID}{50}{section*.31}%
+\contentsline {subsubsection}{Chi tiết mô hình DNN}{51}{section*.32}%
+\contentsline {subsubsection}{Huấn luyện mô hình DNN trên tập IDS-train}{52}{section*.33}%
+\contentsline {subsubsection}{Kiểm thử mô hình DNN trên tập IDS-test}{53}{section*.34}%
+\contentsline {subsubsection}{So sánh kết quả mô hình DNN với DeepDefense và LUCID}{53}{section*.35}%
+\contentsline {subsection}{\numberline {4.2.4}So sánh đánh giá các mô hình trên tập IDS-test}{54}{subsection.4.2.4}%
+\contentsline {subsubsection}{So sánh đánh giá độ chính xác}{54}{section*.36}%
+\contentsline {subsubsection}{So sánh và đánh giá thời gian thực thi}{55}{section*.37}%
+\contentsline {section}{\numberline {4.3}Phát triển phần mềm phát hiện tấn công DoS/DDoS – IDS-DDoS}{55}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Kiến trúc của phần mềm}{55}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Rút trích các đặc trưng}{57}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Sử dụng phần mềm}{58}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Xây dựng SDN controller bằng RYU}{59}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Mô hình mạng thử nghiệm}{63}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Thử nghiệm và phân tích kết quả}{66}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Mạng SDN bị tấn công từ bên ngoài}{67}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Máy con trong mạng SDN bị lợi dụng tấn công ra bên ngoài}{69}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Kết luận kết quả kiểm thử}{71}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Tổng kết}{72}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Các kết luận từ đề tài}{72}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Kết quả đạt được}{73}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Hướng phát triển}{73}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Lời kết}{74}{section.7.4}%

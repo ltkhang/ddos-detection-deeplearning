@@ -1,0 +1,295 @@
+\begin{thebibliography}{10}
+
+\bibitem{11-Kreutz}
+D.~{Kreutz}, F.~M.~V. {Ramos}, P.~E. {Veríssimo}, C.~E. {Rothenberg},
+  S.~{Azodolmolky}, and S.~{Uhlig}, ``Software-defined networking: A
+  comprehensive survey,'' {\em Proceedings of the IEEE}, vol.~103, no.~1,
+  pp.~14--76, 2015.
+
+\bibitem{16-openvswitch}
+``What is open vswitch?.''
+  \url{http://docs.openvswitch.org/en/latest/intro/what-is-ovs/}, [Accessed
+  02-Apr-2020].
+
+\bibitem{18-Dey}
+A.~Dey, ``Machine learning algorithms : A review,'' in {\em International
+  Journal of Computer Science and Information Technologies (IJCSIT)}, vol.~7,
+  pp.~1174--1179, 2016.
+
+\bibitem{62-Shrestha}
+A.~{Shrestha} and A.~{Mahmood}, ``Review of deep learning algorithms and
+  architectures,'' {\em IEEE Access}, vol.~7, pp.~53040--53065, 2019.
+
+\bibitem{28-Yuan}
+X.~{Yuan}, C.~{Li}, and X.~{Li}, ``Deepdefense: Identifying ddos attack via
+  deep learning,'' in {\em 2017 IEEE International Conference on Smart
+  Computing (SMARTCOMP)}, pp.~1--8, 2017.
+
+\bibitem{27-Corin}
+R.~{Doriguzzi-Corin}, S.~{Millar}, S.~{Scott-Hayward},
+  J.~{Martínez-del-Rincón}, and D.~{Siracusa}, ``Lucid: A practical,
+  lightweight deep learning solution for ddos attack detection,'' {\em IEEE
+  Transactions on Network and Service Management}, vol.~17, no.~2,
+  pp.~876--889, 2020.
+
+\bibitem{1-dos-concept}
+``Understanding denial-of-service attacks us-cert. 6 february 2013.''
+  \url{https://www.us-cert.gov/ncas/tips/ST04-015}, [Accessed 02-Apr-2020].
+
+\bibitem{2-imperva}
+``Distributed denial of service attack (ddos) definition.''
+  \url{https://www.imperva.com/learn/application-security/ddos-attacks/},
+  [Accessed 02-Apr-2020].
+
+\bibitem{3-Ko}
+{Nam-Seok Ko}, {Sung-Kee Noh}, {Jong-Dae Park}, {Soon-Seok Lee}, and {Hong-Shik
+  Park}, ``An efficient anti-ddos mechanism using flow-based forwarding
+  technology,'' in {\em Digest of the 9th International Conference on Optical
+  Internet (COIN 2010)}, pp.~1--3, 2010.
+
+\bibitem{4-Fallah}
+M.~Fallah and N.~Kahani, ``Tdpf: A traceback-based distributed packet filter to
+  mitigate spoofed ddos attacks,'' {\em Security and Communication Networks},
+  vol.~7, pp.~254--264, 02 2014.
+
+\bibitem{5-Yoon}
+M.~{Yoon}, ``Using whitelisting to mitigate ddos attacks on critical internet
+  sites,'' {\em IEEE Communications Magazine}, vol.~48, no.~7, pp.~110--115,
+  2010.
+
+\bibitem{6-wired}
+``What we know about friday's massive east coast internet outage.''
+  \url{https://www.wired.com/2016/10/internet-outage-ddos-dns-dyn/}, [Accessed
+  02-Apr-2020].
+
+\bibitem{7-wired}
+``Github survived the biggest ddos attack ever recorded.''
+  \url{https://www.wired.com/story/github-ddos-memcached/}, [Accessed
+  02-Apr-2020].
+
+\bibitem{8-bbc}
+``Web attack knocks bbc websites offline.''
+  \url{https://www.bbc.com/news/technology-35204915}, [Accessed 02-Apr-2020].
+
+\bibitem{9-cnbc}
+``Record-breaking ddos attack strikes cloudflare’s network.''
+  \url{https://www.cnbc.com/2014/02/11/record-breaking-ddos-attack-strikes-cloudflares-network.html},
+  [Accessed 02-Apr-2020].
+
+\bibitem{10-cloudflare}
+``The ddos that knocked spamhaus offline (and how we mitigated it).''
+  \url{https://blog.cloudflare.com/the-ddos-that-knocked-spamhaus-offline-and-ho/},
+  [Accessed 02-Apr-2020].
+
+\bibitem{13-McKeown}
+N.~McKeown, T.~Anderson, H.~Balakrishnan, G.~Parulkar, L.~Peterson, J.~Rexford,
+  S.~Shenker, and J.~Turner, ``Openflow: Enabling innovation in campus
+  networks,'' {\em SIGCOMM Comput. Commun. Rev.}, vol.~38, p.~69–74, Mar.
+  2008.
+
+\bibitem{14-Lara}
+A.~{Lara}, A.~{Kolasani}, and B.~{Ramamurthy}, ``Network innovation using
+  openflow: A survey,'' {\em IEEE Communications Surveys Tutorials}, vol.~16,
+  no.~1, pp.~493--512, 2014.
+
+\bibitem{17-Asadollahi}
+S.~{Asadollahi}, B.~{Goswami}, and M.~{Sameer}, ``Ryu controller's scalability
+  experiment on software defined networks,'' in {\em 2018 IEEE International
+  Conference on Current Trends in Advanced Computing (ICCTAC)}, pp.~1--5, 2018.
+
+\bibitem{19-Welling}
+M.~Welling and D.~Bren in {\em A First Encounter with Machine Learning},
+  University of California Irvine, 2010.
+
+\bibitem{20-Bowles}
+M.~T. Bowles, {\em Machine Learning in Python: Essential Techniques for
+  Predictive Analysis}.
+\newblock "John Wiley \& Sons Inc", 2015.
+
+\bibitem{21-Kotsiantis}
+S.~B. Kotsiantis, ``Supervised machine learning: A review of classification
+  techniques,'' in {\em Proceedings of the 2007 Conference on Emerging
+  Artificial Intelligence Applications in Computer Engineering: Real Word AI
+  Systems with Applications in EHealth, HCI, Information Retrieval and
+  Pervasive Technologies}, (NLD), p.~3–24, IOS Press, 2007.
+
+\bibitem{70-Parmar}
+A.~Parmar, R.~Katariya, and V.~Patel, ``A review on random forest: An ensemble
+  classifier,'' in {\em International Conference on Intelligent Data
+  Communication Technologies and Internet of Things (ICICI) 2018} (J.~Hemanth,
+  X.~Fernando, P.~Lafata, and Z.~Baig, eds.), (Cham), pp.~758--763, Springer
+  International Publishing, 2019.
+
+\bibitem{25-Du}
+X.~{Du}, Y.~{Cai}, S.~{Wang}, and L.~{Zhang}, ``Overview of deep learning,'' in
+  {\em 2016 31st Youth Academic Annual Conference of Chinese Association of
+  Automation (YAC)}, pp.~159--164, 2016.
+
+\bibitem{26-McCulloch}
+W.~S. McCulloch and W.~Pitts, {\em A Logical Calculus of the Ideas Immanent in
+  Nervous Activity}, p.~15–27.
+\newblock Cambridge, MA, USA: MIT Press, 1988.
+
+\bibitem{63-Nwankpa}
+C.~{Nwankpa}, W.~{Ijomah}, A.~{Gachagan}, and S.~{Marshall}, ``{Activation
+  Functions: Comparison of trends in Practice and Research for Deep
+  Learning},'' {\em arXiv e-prints}, p.~arXiv:1811.03378, Nov. 2018.
+
+\bibitem{29-Feinstein}
+L.~{Feinstein}, D.~{Schnackenberg}, R.~{Balupari}, and D.~{Kindred},
+  ``Statistical approaches to ddos attack detection and response,'' in {\em
+  Proceedings DARPA Information Survivability Conference and Exposition},
+  vol.~1, pp.~303--314 vol.1, 2003.
+
+\bibitem{30-Bojovic}
+P.~Bojovi{\'c}, I.~Ba{\v{s}}i{\v{c}}evi{\'c}, S.~Ocovaj, and M.~Popovi{\'c},
+  ``A practical approach to detection of distributed denial-of-service attacks
+  using a hybrid detection method,'' {\em Computers \& Electrical Engineering},
+  vol.~73, pp.~84--96, 2019.
+
+\bibitem{32-Kumar}
+P.~{Kumar}, M.~{Tripathi}, A.~{Nehra}, M.~{Conti}, and C.~{Lal}, ``Safety:
+  Early detection and mitigation of tcp syn flood utilizing entropy in sdn,''
+  {\em IEEE Transactions on Network and Service Management}, vol.~15, no.~4,
+  pp.~1545--1559, 2018.
+
+\bibitem{33-Ring}
+M.~{Ring}, S.~{Wunderlich}, D.~{Scheuring}, D.~{Land es}, and A.~{Hotho}, ``{A
+  Survey of Network-based Intrusion Detection Data Sets},'' {\em arXiv
+  e-prints}, p.~arXiv:1903.02460, Mar. 2019.
+
+\bibitem{34-Santanna}
+J.~J. {Santanna}, R.~{van Rijswijk-Deij}, R.~{Hofstede}, A.~{Sperotto},
+  M.~{Wierbosch}, L.~Z. {Granville}, and A.~{Pras}, ``Booters — an analysis
+  of ddos-as-a-service attacks,'' in {\em 2015 IFIP/IEEE International
+  Symposium on Integrated Network Management (IM)}, pp.~243--251, 2015.
+
+\bibitem{35-Shiravi}
+A.~Shiravi, H.~Shiravi, M.~Tavallaee, and A.~A. Ghorbani, ``Toward developing a
+  systematic approach to generate benchmark datasets for intrusion detection,''
+  {\em Comput. Secur.}, vol.~31, p.~357–374, May 2012.
+
+\bibitem{36-Sharafaldin}
+I.~Sharafaldin., A.~H. Lashkari., and A.~A. Ghorbani., ``Toward generating a
+  new intrusion detection dataset and intrusion traffic characterization,'' in
+  {\em Proceedings of the 4th International Conference on Information Systems
+  Security and Privacy - Volume 1: ICISSP,}, pp.~108--116, INSTICC, SciTePress,
+  2018.
+
+\bibitem{36a-ids2018}
+C.~I. for Cybersecurity, ``A realistic cyber defense dataset
+  (cse-cic-ids2018).'' \url{https://registry.opendata.aws/cse-cic-ids2018/},
+  [Accessed 02-Apr-2020].
+
+\bibitem{37-cicflowmeter}
+C.~I. for Cybersecurity, ``Cicflowmeter.''
+  \url{https://www.unb.ca/cic/research/applications.html}, [Accessed
+  02-Apr-2020].
+
+\bibitem{39-Lippmann}
+R.~Lippmann, J.~W. Haines, D.~J. Fried, J.~Korba, and K.~Das, ``The 1999 darpa
+  off-line intrusion detection evaluation,'' {\em Comput. Netw.}, vol.~34,
+  p.~579–595, Oct. 2000.
+
+\bibitem{38-Stolfo}
+S.~Stolfo, ``Kdd cup 99 dataset.''
+  \url{http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html}, [Accessed
+  02-Apr-2020].
+
+\bibitem{40-Tavallaee}
+M.~{Tavallaee}, E.~{Bagheri}, W.~{Lu}, and A.~A. {Ghorbani}, ``A detailed
+  analysis of the kdd cup 99 data set,'' in {\em 2009 IEEE Symposium on
+  Computational Intelligence for Security and Defense Applications}, pp.~1--6,
+  2009.
+
+\bibitem{41-He}
+Z.~{He}, T.~{Zhang}, and R.~B. {Lee}, ``Machine learning based ddos attack
+  detection from source side in cloud,'' in {\em 2017 IEEE 4th International
+  Conference on Cyber Security and Cloud Computing (CSCloud)}, pp.~114--120,
+  2017.
+
+\bibitem{42-Doshi}
+R.~{Doshi}, N.~{Apthorpe}, and N.~{Feamster}, ``Machine learning ddos detection
+  for consumer internet of things devices,'' in {\em 2018 IEEE Security and
+  Privacy Workshops (SPW)}, pp.~29--35, 2018.
+
+\bibitem{47-Koay}
+A.~{Koay}, A.~{Chen}, I.~{Welch}, and W.~K.~G. {Seah}, ``A new multi classifier
+  system using entropy-based features in ddos attack detection,'' in {\em 2018
+  International Conference on Information Networking (ICOIN)}, pp.~162--167,
+  2018.
+
+\bibitem{48-Yin}
+C.~{Yin}, Y.~{Zhu}, J.~{Fei}, and X.~{He}, ``A deep learning approach for
+  intrusion detection using recurrent neural networks,'' {\em IEEE Access},
+  vol.~5, pp.~21954--21961, 2017.
+
+\bibitem{49-Min}
+E.~Min, J.~Long, Q.~Liu, J.~Cui, and W.~Chen, ``Tr-ids: Anomaly-based intrusion
+  detection through text-convolutional neural network and random forest,'' {\em
+  Security and Communication Networks}, vol.~2018, pp.~1--9, 07 2018.
+
+\bibitem{50-Wu}
+K.~{Wu}, Z.~{Chen}, and W.~{Li}, ``A novel intrusion detection model for a
+  massive network using convolutional neural networks,'' {\em IEEE Access},
+  vol.~6, pp.~50850--50859, 2018.
+
+\bibitem{61-Basnet}
+C.~J. L.~W. Ram B.~Basnet, Riad~Shash and T.~Doleck, ``Towards detecting and
+  classifying network intrusion traffic using deep learning frameworks,'' {\em
+  Journal of Internet Services and Information Security (JISIS)}, vol.~9,
+  pp.~1--17, nov 2019.
+
+\bibitem{51-Fonseca}
+P.~{Fonseca}, R.~{Bennesby}, E.~{Mota}, and A.~{Passito}, ``A replication
+  component for resilient openflow-based networking,'' in {\em 2012 IEEE
+  Network Operations and Management Symposium}, pp.~933--939, 2012.
+
+\bibitem{52-Kim}
+{Myung-Sup Kim}, {Hun-Jeong Kong}, {Seong-Cheol Hong}, {Seung-Hwa Chung}, and
+  J.~W. {Hong}, ``A flow-based method for abnormal network traffic detection,''
+  in {\em 2004 IEEE/IFIP Network Operations and Management Symposium (IEEE Cat.
+  No.04CH37507)}, vol.~1, pp.~599--612 Vol.1, 2004.
+
+\bibitem{56-manso}
+J.~S.~C. Manso, Pedro;~Moura, ``Sdn-based intrusion detection system for early
+  detection and mitigation of ddos attacks,'' {\em MDPI Information journal},
+  vol.~10, p.~106, mar 2019.
+
+\bibitem{54-Niyaz}
+Q.~{Niyaz}, W.~{Sun}, and A.~Y. {Javaid}, ``{A Deep Learning Based DDoS
+  Detection System in Software-Defined Networking (SDN)},'' {\em arXiv
+  e-prints}, p.~arXiv:1611.07400, Nov. 2016.
+
+\bibitem{55-Li}
+C.~Li, Y.~Wu, X.~Yuan, Z.~Sun, W.~Wang, X.~Li, and L.~Gong, ``Detection and
+  defense of ddos attack–based on deep learning in openflow-based sdn,'' {\em
+  International Journal of Communication Systems}, vol.~31, no.~5, p.~e3497,
+  2018.
+\newblock e3497 IJCS-17-0848.R1.
+
+\bibitem{67-Patle}
+A.~{Patle} and D.~S. {Chouhan}, ``Svm kernel functions for classification,'' in
+  {\em 2013 International Conference on Advances in Technology and Engineering
+  (ICATE)}, pp.~1--9, 2013.
+
+\bibitem{68-Vapnik}
+C.~Cortes and V.~Vapnik, ``Support-vector networks,'' {\em Mach. Learn.},
+  vol.~20, p.~273–297, Sept. 1995.
+
+\bibitem{71-Rish}
+I.~Rish {\em et~al.}, ``An empirical study of the naive bayes classifier,'' in
+  {\em IJCAI 2001 workshop on empirical methods in artificial intelligence},
+  vol.~3, pp.~41--46, 2001.
+
+\bibitem{72-Somvanshi}
+M.~{Somvanshi}, P.~{Chavan}, S.~{Tambade}, and S.~V. {Shinde}, ``A review of
+  machine learning techniques using decision tree and support vector machine,''
+  in {\em 2016 International Conference on Computing Communication Control and
+  automation (ICCUBEA)}, pp.~1--7, 2016.
+
+\bibitem{60-Kingma}
+D.~P. {Kingma} and J.~{Ba}, ``{Adam: A Method for Stochastic Optimization},''
+  {\em arXiv e-prints}, p.~arXiv:1412.6980, Dec. 2014.
+
+\end{thebibliography}

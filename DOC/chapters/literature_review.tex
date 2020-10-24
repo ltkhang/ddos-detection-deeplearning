@@ -1,0 +1,67 @@
+Trong chương này, chúng tôi sẽ tiến hành tìm hiểu, khảo sát các công trình liên quan đến chủ đề của khóa luận.
+
+
+\section{Phát hiện tấn công DDoS với phương pháp thống kê}
+\label{stat-method}
+
+R. Doriguzzi-Corin và các cộng sự \cite{27-Corin} cho rằng, đo lường các đặc tính thống kê của các thuộc tính lưu lượng mạng là phương pháp thông dụng để phát hiện tấn công DDoS, thường liên quan đến việc quan sát sự biến đổi entropy của trường header trong các gói tin. Bằng định nghĩa này, entropy là đo lường của sự đa dạng hay sự ngẫu nhiên trong tập dữ liệu. Phương thức phát hiện tấn công DDoS dựa trên entropy đã được đưa ra ở các nghiên cứu học thuật vào những năm 2000, dựa trên giả sử rằng, trong suốt quá trình tấn công DDoS băng thông, tính ngẫu nhiên của đặc trưng lưu lượng biến đổi đột ngột. Lý do là đặc trưng của các cuộc tấn công DDoS băng thông thường có một số lượng lớn kẻ tấn công, thông thường là các thiết bị bị xâm nhập gửi một lượng lớn yêu cầu đến nạn nhân. Do đó, các cuộc tấn công này tường gây ra sự sụt giảm trong việc phân phối một số thuộc tính lưu lượng truy cập, chẳng hạn như địa chỉ IP đích, hoặc sự gia tăng trong việc phân phối các thuộc tính khác, ví dụ như địa chỉ IP nguồn. Cách xác định tấn công DDoS thường phụ thuộc vào giá trị trung bình của ngưỡng của các chỉ số phân phối này.
+
+Feinstein và các cộng sự \cite{29-Feinstein} đã trình bày kỹ thuật phát hiện DDoS dựa trên việc tính toán entropy của IP nguồn và phân phối Chi bình phương. Tác giả đã quan sát sự thay đổi trong entropy IP nguồn và thống kê Chi bình thương thông qua sự biến động của các lưu lượng hợp lệ thì nhỏ, so với độ lệch do lưu lượng tấn công gây ra. Tương tự vậy, P. Bojovic và các cộng sự \cite{30-Bojovic} đã kết hợp entropy với đặc tính lưu lượng băng thông để phát hiện tấn công DDoS băng thông.
+
+Một hạn chế thường thấy ở kỹ thuật dựa trên entropy là sự bắt buộc chọn lấy một ngưỡng phát hiện chính xác. Các hệ thống mạng khác nhau sẽ có độ lệch về băng thông khác nhau, dẫn đến thách thức trong việc áp dụng một ngưỡng chính xác sao cho giảm tối thiểu các tỷ lệ nhận diện sai trong các kịch bản tấn công khác nhau. Một giải pháp được đề xuất bởi Kumar và các cộng sự \cite{32-Kumar} là gán linh động giá trị ngưỡng để có thể tự động thích nghi với lưu lượng mạng biến động thông thường. 
+
+
+\section{Phát hiện DDoS với phương pháp học máy và học sâu}
+
+\subsection{Một số dataset được sử dụng hiện nay}
+
+Hiện nay có rất nhiều dataset dành cho lĩnh vực an toàn thông tin ra đời, trong đó, phần lớn đề cập đến vấn đề phát hiện và phòng thủ trước tấn công DoS/DDoS. M. Ring và các cộng sự \cite{33-Ring} đã có một khảo sát chi tiết các dataset liên quan đến an toàn thông tin, trong phần này tôi chỉ trích xuất ra các dataset liên quan đến tấn công DoS/DDoS.
+
+Booters \cite{34-Santanna}. Booters là dịch vụ tấn công từ chối dịch vụ được sự dụng bởi các tin tặc. Santanna và các cộng sự \cite{34-Santanna} đã công bố dataset sử dụng 9 loại tấn công của Booters nhắm vào các máy tính trong mạng lưới của họ. Kết quả được ghi lại dưới dạng gói tin có lên tới 250GB lưu lượng mạng. Từng gói tin riêng lẻ thì không được dán nhãn, tuy nhiên các loại tấn công khác nhau được tách ra các tệp khác nhau. Dataset được công khai tuy nhiên tên của các loại tấn công bị ẩn đi do vấn đề về quyền riêng tư.
+
+ISCX 2012 \cite{35-Shiravi}, được tạo ra vào năm 2012 bởi Canadian Institute for Cybersecurity (CIC) bằng việc bắt các gói tin trong môi trường mạng mô phỏng trong vòng 1 tuần. Tác giả sử dụng các phương pháp động để tạo ra dataset với các lưu lượng bình thường cũng như lưu lượng độc hại. Tác giả chia thành 2 phiên bản. Phiên bản alpha định nghĩa các kịch bản tấn công, phiên bản beta định nghĩa các kịch bản của người dùng thông thường bao gồm gửi email, lướt web, vv. Dựa vào phương pháp này, tác giả đã tạo ra dataset khá hoàn thiện, trong đó có các loại tấn công phổ biến mà bao gồm cả tấn công DoS và DDoS.
+
+CIC-IDS-2017 \cite{36-Sharafaldin} và CSE-CIC-IDS-2018 \cite{36a-ids2018} đây là hai dataset cũng được thực hiện bởi CIC. Trong đó, CIC-IDS-2017 được công bố vào năm 2017, tác giả sử dụng các kỹ thuật tương tự như khi xây dựng dataset ISCX 2012. Tuy nhiên với phiên bản mới này, tác giả đã bổ sung nhiều loại tấn công hơn, chi tiết hơn về cách dán nhãn tấn công cũng như giới thiệu phần mềm phân tích lưu lượng mạng CICFlowMeter \cite{37-cicflowmeter}. Với kết quả của phần mềm này, các nhà nghiên cứu có thể dễ dàng áp dụng các phương pháp học máy và học sâu mà không cần phải tiển xử lý hàng trăm GB thông tin các gói tin. Hơn nữa, năm 2018, tác giả đã cho ra đời dataset CSE-CIC-IDS-2018 (gọi tắt là CICIDS2018), với việc kết hợp với AWS cloud service, để có thể tạo ra một mạng mô phỏng phức tạp sát với mạng lưới thực tế. Từ đó, tác giả áp dụng nhiều kịch bản tấn công làm cho dataset này trở thành dataset đầy đủ và tốt nhất hiện nay.
+
+DARPA \cite{39-Lippmann}. DARPA là dataset được dùng rộng rãi trong phát hiện xâm nhập mạng, được tạo bởi MIT Lincoln Lab trong mạng mô phỏng. Dataset chứa nhiều loại tấn công như DoS, buffer overflow, port scan, rootkits.
+
+KDD CUP 99 \cite{38-Stolfo} dựa trên DARPA dataset và trở thành dataset được sử dụng rộng rãi. Dataset này không chứa đựng thông tin gói tin hay thông tin flow, mà đơn giản là chỉ chứa các chỉ mục. Ở đó bao gồm các thuộc tính của các kết nối TCP, các thuộc tính cấp cao như số lần đăng nhập sai, và hơn 20 thuộc tính khác nữa.
+
+NSL-KDD \cite{40-Tavallaee}. NSL-KDD là phiên bản nâng cấp của KDD CUP 99 với việc loại bỏ phần lớn các thông tin dư thừa. Dataset này có 150,000 điểm dữ liệu được chia ra thành tập huấn luyện và tập kiểm tra.
+
+\subsection{Một số công trình sử dụng phương pháp học máy}
+
+Có nhiều công trình nghiên cứu sử dụng học máy vào việc phát hiện tấn công DoS/DDoS.
+He và các cộng sự \cite{41-He} đã sử dụng 9 loại giải thuật học máy gồm Linear Regression, SVM (linear, RBF, Polynomial kernel), Decision Tree, Naïve Bayes, Random Forest, K-means, Gaussian EM. Trong đó kết quả tốt nhất đạt được là độ chính xác cao (99.7\%) và tỷ lệ nhận diện sai thấp (<0.07\%) với giải thuật Linear SVM.
+
+Tương tự, R. Doshi và các cộng sự \cite{42-Doshi} đã áp dụng các phương pháp học máy để phát hiện tấn công từ chối dịch vụ tại nguồn trong hệ thống mạng các thiết bị IoT. Ở đây, tác giả chủ yếu phát hiện các thiết bị IoT bị lợi dụng để trở thành công cụ tấn công DDoS. Kết quả cho thấy, các phương pháp học máy cho độ chính xác rất cao và trong đó mô hình Linear SVM cũng được đánh giá rất tốt với độ chính xác lên đến 99.1\%.
+
+\subsection{Một số công trình sử dụng phương pháp học sâu}
+
+Song song với các công trình nghiên cứu áp dụng học máy, các công trình áp dụng học sâu cũng xuất hiện khá nhiều gần đây. Trong đó, một số công trình cũng thực hiện so sánh các kết quả của hai phương pháp này để có cái nhìn tổng quan hơn.
+
+Koay và các cộng sự \cite{47-Koay} đã để xuất phương pháp kết hợp ba mô hình như RNN, MLP và ADT tạo nên mô hình E3ML. Tác giả huấn luyện và kiểm thử các mô hình trên hai dataset là ISCX2012 và DARPA. So sánh kế quả thu được, dù kết hợp các mô hình lại với nhau nhưng kết quả của E3ML vẫn tương đương so với mô hình học sâu RNN. Cho thấy được khả năng học vượt trội của mô hình học sâu này.
+
+Yin và các cộng sự \cite{48-Yin} đã so sánh kết quả huấn luyện trên dataset NSL-KDD ở mô hình học sâu RNN với các mô hình máy học J48, ANN, Random forest và SVM. Kết quả cho thấy RNN có độ chính xác cao hơn các phương pháp máy học. 
+
+Min và các cộng sự \cite{49-Min} đã kết hợp CNN và Random forest  để huấn luyện mô hình của họ gọi là TR-IDS trên dataset ISCX2012 và so sánh kết quả với các phương pháp học máy khác như SVM, NN, CNN, RF, kết quả cho thấy mô hình kết hợp của họ cho kết quả với độ chính xác cao (99.13\%).
+
+Wu và các cộng sự \cite{50-Wu} đã giới thiệu hệ thống phát hiện xâm nhập sử dụng CNN để phân loại đa lớp. Họ huấn luyện mô hình của mình trên dataset NSL-KDD, mà ở đó dataset này được mã hóa sang dạng mảng 11x11. Kết quả sau cùng được so sánh với mô hình RNN thì có độ chính xác cao hơn khi phân loại tấn công DoS, tuy nhiên mô hình được để xuất này lại có độ phức tạp gấp 20 lần so với mô hình RNN.
+
+Yuan và các cộng sự \cite{28-Yuan} đã kết hợp CNN và RNN và đề xuất phương pháp được đặt trên là DeepDefense. Tác giả sử dụng kỹ thuật sliding-window để xử lý dữ liệu thô từ dataset ISCX2012 để chuyển từ dạng packet-based sang dạng window-based. Tác giả chia dataset thành hai phần lớn và bé. Phần lớn là các gói tin được ghi nhận vào ngày 15 và phần bé là các gói tin được ghi nhận vào ngày 14. Như báo cáo, mô hình 3LSTM đạt độ chính xác cao nhất trong phần dataset lớn với 98.41\%, trong khi đó GRU đạt độ chính xác cao nhất với 98.417\% trong phần dataset còn lại.
+
+Doriguzzi-Corin và các cộng sự \cite{27-Corin} đã sử dụng mô hình CNN với trọng tâm là Conv1D và đặt tên là LUCID. Các tác giả nhắm đến mục tiêu xây dựng mô hình nhỏ gọn để có thể triển khai trên các thiết bị hạn chế phần cứng. Tác giả huấn luyện mô hình của mình trên một loạt các dataset như ISCX2012, CICIDS2017 và CICIDS2018. Ở đây, tác giả chỉ thu thập trên mỗi gói tin 11 đặc trưng và ứng với 100 gói tin trong thời gian 100 giây, tác giả xem đó là 1 luồng. Với việc khai thác khả năng của Conv1D, ReLU, Max pooling, theo như báo cáo, tác giả đã đạt được kết quả rất tốt khi so sánh với các nghiên cứu khác trên các tập dataset tương ứng. Ở đó, với việc kết hợp huấn luyện trên cả ba dataset nêu trên, báo cáo đạt được độ chính xác lên tới 99.50\%, với mức độ nhỏ gọn hơn đến 40 lần so với mô hình DeepDefense của \cite{28-Yuan}.
+
+Ram B. Basnet và các cộng sự \cite{61-Basnet} áp dụng mô hình mạng nơ-ron sâu vào dataset dataset CSE-CIC-IDS2018 để phân loại nhiều loại tấn công. Tác giả sử dụng 2 lớp ẩn dense layer, với lớp đầu tiên có số đơn vị trùng với số đặc trưng được ghi nhận trong dataset và lớp thứ 2 có 128 đơn bị. Thay vì sử dụng phương thức kiểm tra bằng cách tách dataset thành tập huấn luyện và tập kiểm thử, tác giả sử dụng phương pháp n-fold cross-validation. Theo báo cáo, với mô hình này, khi phân loại các tấn công DoS/DDoS cho ra kết quả luôn lớn hơn 99\%.
+
+\section{Phát hiện và phòng thủ DDoS trong SDN}
+
+Trong môi trường SDN, có nhiều phương pháp đã được đưa ra để phát hiện và giảm thiểu thiệt hai do DDoS gây ra.
+
+Kim và các cộng sự \cite{52-Kim} đã đề xuất phương pháp dự đoán lưu lượng bình thường dựa trên ngưỡng của luồng. Phương pháp sử dụng Cisco’s NetFlow Technology, để phát hiện lưu lượng mạng bởi tính năng phát hiện được xây dựng bằng các đặt trưng lưu lượng và ngưỡng được thiết lập. Tuy nhiên, phương pháp này lại phụ thuộc quá nhiều vào kinh nghiệm thực tiễn của người nghiên cứu.
+
+Manso và các cộng sự \cite{56-manso} đã áp dụng hệ thống phát hiện xâm nhập mã nguồn mở SNORT vào mạng SDN để cảnh báo sớm sự xâm nhập và tấn công DDoS từ nguồn. Trong nghiên cứu này, tác giả chủ yếu đưa ra các luật có thể áp dụng vào SNORT để phát hiện sớm việc các thiết bị trong mạng bị lợi dụng thành công cụ tấn công DDoS.
+
+Niyaz và các cộng sự \cite{54-Niyaz} đề xuất phương pháp sử dụng mô hình học sâu với Stacked Autoencoder. Đầu tiên họ xây dựng môi trường mô phỏng mạng SDN để thu thập thông tin các gói tin, thông tin các luồng, tạo nên một dataset riêng gồm các luồng bình thường và luồng tấn công. Sau đó họ phân tích dữ liệu thu được và tiến hành huấn luyện. Đặc biệt, trong dataset của họ có phân loại các loại tán công khác nhau như SYN flood, UDP flood, TCP flood, vv. Kết quả báo cáo là độ chính xác phân loại đa lớp đạt kết quả hầu hết trên 90\%, bên cạnh đó độ chính xác của phân loại nhị phân đạt được kết quá lên đến 99\%.
+
+Li và các cộng sự \cite{55-Li} đã áp dụng mô hình học sâu RNN ở nghiên cứu \cite{28-Yuan} vào mạng SDN. Tác giả đã đề xuất mô hình bắt gói tin và phân loại luồng bằng các mô-dun kết hợp với SDN controller. Sau cùng để ngăn chặn cuộc tấn công, tác giả chặn hai chiều đối với những luồng có IP được phân loại là độc hại.

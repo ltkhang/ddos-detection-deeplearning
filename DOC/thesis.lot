@@ -1,0 +1,22 @@
+\babel@toc {vietnamese}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Một số cuộc tấn công DDoS quy mô lớn}}{13}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Một số công ty cung cấp OpenFlow Switch}}{15}{table.2.2}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Danh sách các ngày được chọn trong dataset CICIDS2018}}{37}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Bảng thống kê dữ liệu trong CICIDS2018}}{37}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Các tập dữ liệu con sau khi phân chia}}{39}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{Danh sách các đặc trưng của luồng gói tin được rút trích}}{42}{table.4.4}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Mẫu ma trận nhầm lẫn}}{43}{table.4.5}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Kết quả huấn luyện các mô hình học máy trên tập IDS-Test}}{49}{table.4.6}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Ma trận nhầm lẫn mô hình DNN trên tập IDS-Test}}{53}{table.4.7}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Kết quả mô hình DNN trên tập IDS-test}}{53}{table.4.8}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces So sánh kết quả của mô hình DNN với DeepDefense và LUCID}}{53}{table.4.9}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces So sánh độ chính xác của các mô hình trên tập IDS-Test}}{54}{table.4.10}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces So sánh thời gian thực thi giữa DT và DNN}}{55}{table.4.11}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Mô tả các máy tính trong mạng}}{65}{table.5.1}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

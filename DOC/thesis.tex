@@ -1,0 +1,220 @@
+\documentclass[a4paper,oneside]{report}
+\usepackage{scrextend}
+\changefontsizes{13pt}
+
+\usepackage{fontspec}
+\usepackage{newtxmath}
+\setmainfont{Times New Roman}
+\setsansfont{Arial}
+\setmonofont{Courier New}
+
+\usepackage[vietnamese]{babel}
+
+\linespread{1.5}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{nccmath}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage{multido}
+ 
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  language=Java,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4
+}
+
+\geometry{
+left=35mm,
+right=20mm,
+top=30mm,
+bottom=30mm
+}
+
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0.5em}
+
+\usepackage{standalone}
+
+\title{
+	{Phát hiện và phòng thủ trước các cuộc tấn công từ chối dịch vụ dựa trên các phương thức học máy và học sâu trong Software-defined Networking }\\
+	{\large FIT - HCMUS}\\
+}
+\author{Author Name}
+\date{day month year}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{13pt}
+\rhead{\nouppercase\leftmark}
+\cfoot{\thepage}
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\usepackage{cite}
+%\addbibresource{thesis.bib}
+\usepackage{fancybox}
+\usepackage{setspace}
+
+\begin{document}
+
+%bia ngoai
+\begin{titlepage} 
+\thisfancypage{
+\setlength{\fboxsep}{10pt}
+\doublebox
+}{}
+\begin{center}
+\begin{large}
+TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN\\
+KHOA CÔNG NGHỆ THÔNG TIN\\
+LỚP CỬ NHÂN TÀI NĂNG \\
+\end{large}
+\vskip1cm
+\vskip1.5cm
+\begin{large}
+%\bfseries
+LƯƠNG TẤN KHANG\\
+\end{large}
+\vskip3cm
+\begin{Large}
+\bfseries
+\onehalfspacing
+PHÁT HIỆN VÀ PHÒNG THỦ TRƯỚC CÁC CUỘC TẤN CÔNG TỪ CHỐI DỊCH VỤ TRONG SOFTWARE-DEFINED NETWORKING DỰA TRÊN CÁC PHƯƠNG THỨC HỌC MÁY VÀ HỌC SÂU
+\end{Large}
+\vskip4cm
+\begin{large}
+KHÓA LUẬN TỐT NGHIỆP CỬ NHÂN CNTT \\
+\end{large}
+\vskip5cm
+\begin{normalsize}
+TP.HCM, NĂM 2020
+\end{normalsize}
+\end{center}
+\end{titlepage}
+
+%bia trong
+\begin{titlepage} 
+\thisfancypage{
+\setlength{\fboxsep}{10pt}
+\doublebox
+}{}
+\begin{center}
+\begin{large}
+TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN\\
+KHOA CÔNG NGHỆ THÔNG TIN\\
+LỚP CỬ NHÂN TÀI NĂNG \\
+\end{large}
+\vskip1cm
+\vskip1.5cm
+\begin{large}
+%\bfseries
+LƯƠNG TẤN KHANG - 1612865 \\
+\end{large}
+\vskip2cm
+\begin{Large}
+\bfseries
+\onehalfspacing
+PHÁT HIỆN VÀ PHÒNG THỦ TRƯỚC CÁC CUỘC TẤN CÔNG TỪ CHỐI DỊCH VỤ TRONG SOFTWARE-DEFINED NETWORKING DỰA TRÊN CÁC PHƯƠNG THỨC HỌC MÁY VÀ HỌC SÂU
+\end{Large}
+\vskip1.5cm
+\begin{large}
+KHÓA LUẬN TỐT NGHIỆP CỬ NHÂN CNTT \\
+\end{large}
+\vskip1cm
+\begin{large}
+GIÁO VIÊN HƯỚNG DẪN \\
+\textbf{TS. TRẦN TRUNG DŨNG} \\
+\textbf{ThS. LÊ GIANG THANH} \\
+\end{large}
+
+\vskip4cm
+\begin{normalsize}
+KHÓA 2016 - 2020
+\end{normalsize}
+\end{center}
+\end{titlepage}
+
+\input{chapters/prof-guide.tex}
+
+\pagenumbering{roman}
+
+\chapter*{Lời cảm ơn}
+\markboth{Lời cảm ơn}{Lời cảm ơn}
+\input{chapters/acknowledgements.tex}
+
+\tableofcontents
+
+\chapter*{Danh mục từ khóa}
+\markboth{Danh mục từ khóa}{Danh mục từ khóa}
+\input{chapters/list_of_keywords.tex}
+
+\listoffigures
+
+\listoftables
+
+\chapter*{Lời mở đầu}
+\pagenumbering{arabic} 
+\addcontentsline{toc}{chapter}{Lời mở đầu}
+\markboth{Lời mở đầu}{Lời mở đầu}
+\label{chap:foreword}
+\input{chapters/preface.tex}
+
+\chapter{Giới thiệu}
+\label{chap:introduction}
+\input{chapters/introduction.tex}
+
+\chapter{Cơ sở lý thuyết}
+\label{chap:background}
+\input{chapters/background.tex}
+
+\chapter{Các công trình liên quan}
+\label{chap:review}
+\input{chapters/literature_review.tex}
+
+\chapter{Mô hình giải pháp của đề tài}
+\label{chap:method}
+\input{chapters/proposed_method.tex}
+
+\chapter{Mô hình mạng thử nghiệm}
+\label{chap:network_model}
+\input{chapters/network-model.tex}
+
+\chapter{Thử nghiệm và phân tích kết quả}
+\label{chap:testing}
+\input{chapters/testing.tex}
+
+
+\chapter{Tổng kết}
+\label{chap:conclusion}
+\input{chapters/conclusion.tex}
+
+\bibliography{thesis}{}
+\bibliographystyle{ieeetr}
+\end{document}

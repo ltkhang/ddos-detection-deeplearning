@@ -1,0 +1,56 @@
+\section{Tổng quan về đề tài}
+Phát hiện và phòng thủ trước tấn công DoS/DDoS không phải là một lĩnh vực mới. Kể từ khi cuộc tấn công DDoS lần đầu tiên xuất hiện vào năm 1999, thì tấn công DDoS đang ngày càng trở nên đa dạng và phức tạp. Từ đó, loại tấn công mạng này được xem như là một vấn nạn, một mối đe dọa rất lớn đối với các hệ thống mạng và hệ thống máy chủ trên thế giới. Phát hiện tấn công DoS/DDoS theo đánh giá của các chuyên gia và các tổ chức an ninh mạng hiện nay là bài toán rất khó. Nguyên nhân là vì các cách thức và các cuộc tấn công ngày càng đa dạng và xuất hiện với mức độ dày đặc. Bên cạnh đó, với nền tảng vạn vật kết nối (IoT) phát triển mạnh mẽ, nhu cầu về một mạng lưới đa năng và uyển chuyển dẫn đến sự áp dụng mạnh mẽ Software Defined Network (SDN) vào nền tảng này. Từ đó, phát hiện tấn công DoS/DDoS trong SDN đang là đề tài được chú trọng và nhiều người nghiên cứu.
+
+Các phương thức phát hiện tấn công DDoS hiện nay chủ yếu hiện nay dựa trên việc theo dõi mật độ dữ liệu di chuyển trong hệ thống mạng. Với phương pháp này, việc nhận diện hệ thống đang bị tấn công mật độ cao (high-rate) rất dễ dàng. Tuy nhiên, phương pháp này dễ bị nhầm lẫn giữa tấn công với quá tải do nhu cầu sử dụng tăng cao đột ngột và rõ ràng là không hiệu quả trong việc phát hiện tấn công mật độ thấp (low-rate). Hiện nay, trong môi trường SDN, phương pháp theo dõi này được áp dụng chủ yếu, ở đó, người ta sẽ theo dõi các dữ liệu thống kê các luồng mở do các thiết bị OpenFlow switch trả về. Bên cạnh đó, các phương pháp thống kê và phân tích luồng dữ liệu cũng được áp dụng rộng rãi. Đây là phương pháp được đánh giá tốt hiện nay, tuy nhiên, để có thể chọn được các đặc trưng thống kê và phân tích hiệu quả, phương pháp này cần một người nghiên cứu có trình độ về thống kê nhất định. Ngoài ra, mỗi khi áp dụng các phương pháp thống kê và phân tích mới, các nhà nghiên cứu phải bỏ công sức làm lại từ đầu, từ đó dẫn đến tốn kém về mặt thời gian và nhân lực. 
+
+Hiện nay, các nghiên cứu áp dụng học máy và học sâu trong phát hiện tấn công DoS/DDoS đang xuất hiện ngày một nhiều với các thành tựu đáng kể. Hai phương pháp này đã cho thấy khả năng nhận diện tấn công vượt trội của mình. Từ đó đã thúc đẩy tôi nghiên cứu một hệ thống phát hiện tấn công DoS/DDoS dựa trên nền tảng của các nghiên cứu học máy và học sâu trước đó. Sau đó áp dụng vào hệ thống mạng SDN để có thể phát hiện sớm tấn công DoS/DDoS và giảm thiểu thiệt hại do nó gây ra. Sau cùng, để kiểm thử hệ thống, tôi xây dựng lên hai kịch bản phòng thủ quan trọng: phòng thủ từ nguồn tấn công và phòng thủ từ tấn công bên ngoài.
+
+\section{Bài toán nghiên cứu của đề tài}
+
+Trong khóa luận này, hai mục tiêu chính mà tôi hướng đến là nhận diện và phòng thủ trước tấn công DoS/DDoS trong môi trường mạng SDN.
+
+Trong bài toán nhận diện, tôi áp dụng các phương pháp, các mô hình học máy và học sâu đã được nghiên cứu trước đó để tìm ra được mô hình tốt nhất, cũng như đánh giá ưu và nhược điểm của các mô hình trong các hoàn cảnh khác nhau. Áp dụng huấn luyện nhiều mô hình, tôi tìm ra được mô hình học  máy có hướng tiếp cận  đơn giản  mà kết quả thu được lại tốt nhất là mô hình Decision Tree.
+
+Trong bài toán phòng thủ, tận dụng tính uyển chuyển và tính tập trung của mạng SDN, tôi đề xuất một giải pháp đơn giản mà hiệu quả trong việc ngăn chặn các luồng tấn công DDoS được chẩn đoán từ mô hình học  máy và học sâu.
+
+Kết hợp hai mục tiêu trên, tôi xây dựng nên một hệ thống nhận diện và phòng thủ toàn diện trước tấn công DoS/DDoS trong môi trường mạng SDN.
+
+\section{Mục tiêu đặt ra và hướng tiếp cận vấn đề}
+
+Những mục tiêu mà chúng tôi muốn đạt được như sau:
+
+\begin{itemize}
+\item[--] Hoàn thành thành một phần mềm proof-of-concept trong việc phân loại tấn công DoS/DDoS.
+\item[--] Triển khai một hệ thống phòng thủ proof-of-concept trong mạng SDN.
+\item[--] Huấn luyện trên các mô hình học máy và học sâu khác nhau.
+\item[--] Dễ dàng thay đổi mô hình nhận diện tấn công trong hệ thống.
+\item[--] Dễ dàng mở rộng và áp dụng vào các nền tảng mạng khác so với SDN.
+\item[--] Bảo đảm phần mềm có thể hoạt động theo thời gian thực trên một hệ phần cứng cơ bản.
+\item[--] Cung cấp giao diện thống kê lưu lượng mạng theo thời gian thực trên nền tảng web.
+\end{itemize}
+
+
+Từ những mục tiêu trên, hướng tiếp cận của chúng tôi như sau:
+
+\begin{itemize}
+\item[--] Tập trung xây dựng hệ thống nhận diện và phòng thủ cơ bản, sau đó mới tối ưu hóa sau.
+\item[--] Ưu tiên sử dụng các mô hình học máy và học sâu đơn giản mà hiệu quả.
+\item[--] Ưu tiên sử dụng những công cụ mô phỏng mạng SDN gọn nhẹ.
+\end{itemize}
+
+\section{Đối tượng nghiên cứu}
+
+Những đối tượng nghiên cứu chính trong khóa luận này bao gồm:
+
+\begin{itemize}
+\item[--] Lý thuyết và cách thức tấn công từ chối dịch vụ và từ chối dịch vụ phân tán.
+\item[--] Lý thuyết và mô hình máy học và học sâu.
+\item[--] Lý thuyết và ứng dụng mạng Software defined network.
+\item[--] Các tập dữ liệu về tấn công DoS/DDoS đang có hiện nay.
+\item[--] Các giải pháp phát hiện tấn công DoS/DDoS bằng các phương pháp học máy và học sâu.
+\item[--] Các giải pháp phát hiện và phòng thủ trước tấn công DoS/DDoS trong mạng SDN.
+\end{itemize}
+
+Trên đây là toàn bộ nội dung của chương \ref{chap:introduction} của khóa luận. Qua những gì đã trình bày, tôi hy vọng có thể giúp người đọc có được cái nhìn tổng quát nhất về những vấn đề còn tồn đọng, nguyên nhân, động lực đã thúc đẩy tôi bắt tay vào thực hiện khóa luận này. Bên cạnh đó, tôi cũng đã trình bày những mục tiêu, hướng tiếp cận mà tôi đã vạch ra trước khi bước vào việc tìm hiểu những đối tượng nghiên cứu chính.
+
+Trong chương tiếp theo, tôi sẽ trình bày cơ sở lý thuyết và các khái niệm cơ bản nhất về tấn công từ chối dịch vụ và từ chối dịch vụ phân tán, học máy, học sâu và mạng SDN, giúp người dùng có cái nhìn tổng quan về lý thuyết, dễ nắm bắt hơn khi đọc khóa luận này.
